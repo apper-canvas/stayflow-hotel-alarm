@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "hotelId": 1,
+    "roomType": "Deluxe King Suite",
+    "bedConfiguration": "1 King Bed",
+    "maxOccupancy": 2,
+    "size": 450,
+    "amenities": ["City View", "Mini Bar", "Marble Bathroom", "Work Desk", "Coffee Machine"],
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "basePrice": 450,
+    "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
+  },
+  {
+    "Id": 2,
+    "hotelId": 1,
+    "roomType": "Executive Double",
+    "bedConfiguration": "2 Queen Beds",
+    "maxOccupancy": 4,
+    "size": 380,
+    "amenities": ["City View", "Work Desk", "Coffee Machine", "High-Speed WiFi"],
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "basePrice": 320,
+    "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
+  },
+  {
+    "Id": 3,
+    "hotelId": 2,
+    "roomType": "Ocean View Suite",
+    "bedConfiguration": "1 King Bed",
+    "maxOccupancy": 3,
+    "size": 520,
+    "amenities": ["Ocean View", "Balcony", "Mini Bar", "Jacuzzi", "Kitchenette"],
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "basePrice": 380,
+    "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
+  },
+  {
+    "Id": 4,
+    "hotelId": 2,
+    "roomType": "Standard Beach Room",
+    "bedConfiguration": "2 Double Beds",
+    "maxOccupancy": 4,
+    "size": 320,
+    "amenities": ["Partial Ocean View", "Beach Access", "Coffee Machine"],
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "basePrice": 220,
+    "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
+  },
+  {
+    "Id": 5,
+    "hotelId": 3,
+    "roomType": "Mountain View Lodge Room",
+    "bedConfiguration": "1 King Bed",
+    "maxOccupancy": 2,
+    "size": 350,
+    "amenities": ["Mountain View", "Fireplace", "Ski Storage", "Heated Floors"],
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "basePrice": 280,
+    "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
+  },
+  {
+    "Id": 6,
+    "hotelId": 4,
+    "roomType": "Business King Room",
+    "bedConfiguration": "1 King Bed",
+    "maxOccupancy": 2,
+    "size": 300,
+    "amenities": ["City View", "Work Desk", "High-Speed WiFi", "Coffee Machine"],
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "basePrice": 180,
+    "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
+  },
+  {
+    "Id": 7,
+    "hotelId": 5,
+    "roomType": "Victorian Suite",
+    "bedConfiguration": "1 King Bed",
+    "maxOccupancy": 2,
+    "size": 600,
+    "amenities": ["Historic Charm", "Antique Furnishings", "City View", "Marble Bathroom", "Butler Service"],
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "basePrice": 650,
+    "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
+  },
+  {
+    "Id": 8,
+    "hotelId": 6,
+    "roomType": "Desert Villa",
+    "bedConfiguration": "1 King Bed",
+    "maxOccupancy": 2,
+    "size": 480,
+    "amenities": ["Desert View", "Private Patio", "Fireplace", "Mini Bar", "Spa Bathroom"],
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "basePrice": 350,
+    "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
+  }
+]

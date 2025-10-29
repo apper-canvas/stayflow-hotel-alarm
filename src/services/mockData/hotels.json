@@ -1,0 +1,182 @@
+[
+  {
+    "Id": 1,
+    "name": "The Royal Meridian",
+    "location": {
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "address": "123 Fifth Avenue",
+      "coordinates": { "lat": 40.7589, "lng": -73.9851 }
+    },
+    "starRating": 5,
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Pool", "Spa", "Gym", "Restaurant", "Bar", "Concierge", "Valet"],
+    "description": "Luxury hotel in the heart of Manhattan with world-class amenities and exceptional service.",
+    "contactInfo": {
+      "phone": "+1-555-0123",
+      "email": "reservations@royalmeridian.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "24 hours before arrival"
+    },
+    "rating": 4.8,
+    "reviewCount": 2847
+  },
+  {
+    "Id": 2,
+    "name": "Ocean Breeze Resort",
+    "location": {
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "address": "456 Ocean Drive",
+      "coordinates": { "lat": 25.7617, "lng": -80.1918 }
+    },
+    "starRating": 4,
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Pool", "Beach Access", "Spa", "Restaurant", "Water Sports"],
+    "description": "Beachfront resort with stunning ocean views and tropical paradise atmosphere.",
+    "contactInfo": {
+      "phone": "+1-555-0456",
+      "email": "info@oceanbreezeresort.com"
+    },
+    "policies": {
+      "checkIn": "4:00 PM",
+      "checkOut": "12:00 PM",
+      "cancellation": "48 hours before arrival"
+    },
+    "rating": 4.6,
+    "reviewCount": 1923
+  },
+  {
+    "Id": 3,
+    "name": "Mountain View Lodge",
+    "location": {
+      "city": "Aspen",
+      "state": "CO",
+      "country": "USA",
+      "address": "789 Alpine Way",
+      "coordinates": { "lat": 39.1911, "lng": -106.8175 }
+    },
+    "starRating": 4,
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Ski Access", "Fireplace", "Restaurant", "Bar", "Hot Tub"],
+    "description": "Cozy mountain lodge with breathtaking views and direct ski slope access.",
+    "contactInfo": {
+      "phone": "+1-555-0789",
+      "email": "bookings@mountainviewlodge.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "72 hours before arrival"
+    },
+    "rating": 4.7,
+    "reviewCount": 856
+  },
+  {
+    "Id": 4,
+    "name": "Urban Central Hotel",
+    "location": {
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "address": "321 Downtown Blvd",
+      "coordinates": { "lat": 34.0522, "lng": -118.2437 }
+    },
+    "starRating": 3,
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Gym", "Business Center", "Restaurant", "Parking"],
+    "description": "Modern business hotel in downtown LA with convenient access to attractions.",
+    "contactInfo": {
+      "phone": "+1-555-0321",
+      "email": "reservations@urbancentralhotel.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "12:00 PM",
+      "cancellation": "24 hours before arrival"
+    },
+    "rating": 4.2,
+    "reviewCount": 1456
+  },
+  {
+    "Id": 5,
+    "name": "Historic Grand Plaza",
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA",
+      "address": "555 Union Square",
+      "coordinates": { "lat": 37.7749, "lng": -122.4194 }
+    },
+    "starRating": 5,
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Spa", "Fine Dining", "Concierge", "Valet", "Business Center"],
+    "description": "Historic luxury hotel with Victorian elegance and modern sophistication.",
+    "contactInfo": {
+      "phone": "+1-555-0555",
+      "email": "concierge@historicgrandplaza.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "24 hours before arrival"
+    },
+    "rating": 4.9,
+    "reviewCount": 3241
+  },
+  {
+    "Id": 6,
+    "name": "Desert Oasis Resort",
+    "location": {
+      "city": "Phoenix",
+      "state": "AZ",
+      "country": "USA",
+      "address": "777 Desert View Road",
+      "coordinates": { "lat": 33.4484, "lng": -112.0740 }
+    },
+    "starRating": 4,
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Pool", "Spa", "Golf", "Tennis", "Restaurant", "Bar"],
+    "description": "Luxury desert resort with championship golf course and world-class spa.",
+    "contactInfo": {
+      "phone": "+1-555-0777",
+      "email": "info@desertoasisresort.com"
+    },
+    "policies": {
+      "checkIn": "4:00 PM",
+      "checkOut": "12:00 PM",
+      "cancellation": "48 hours before arrival"
+    },
+    "rating": 4.5,
+    "reviewCount": 1678
+  }
+]

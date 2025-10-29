@@ -1,0 +1,36 @@
+[
+  {
+    "Id": 1,
+    "bookingId": 1,
+    "userId": "user1",
+    "hotelId": 1,
+    "ratings": {
+      "overall": 5,
+      "cleanliness": 5,
+      "service": 5,
+      "location": 4,
+      "value": 4
+    },
+    "reviewText": "Absolutely wonderful stay! The staff was incredibly helpful and the room was pristine. The location couldn't be better for exploring the city.",
+    "photos": ["/api/placeholder/300/200", "/api/placeholder/300/200"],
+    "createdAt": "2024-01-25T15:30:00Z",
+    "helpfulCount": 12
+  },
+  {
+    "Id": 2,
+    "bookingId": 2,
+    "userId": "user1",
+    "hotelId": 2,
+    "ratings": {
+      "overall": 4,
+      "cleanliness": 4,
+      "service": 5,
+      "location": 5,
+      "value": 4
+    },
+    "reviewText": "Great beachfront location with amazing ocean views. The staff went above and beyond to make our family vacation special.",
+    "photos": ["/api/placeholder/300/200"],
+    "createdAt": "2024-02-20T12:45:00Z",
+    "helpfulCount": 8
+  }
+]

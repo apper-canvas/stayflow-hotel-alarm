@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1,
+    "category": "Breakfast",
+    "name": "Continental Breakfast",
+    "description": "Fresh pastries, seasonal fruit, coffee and juice",
+    "price": 28,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 20
+  },
+  {
+    "Id": 2,
+    "category": "Breakfast",
+    "name": "American Breakfast",
+    "description": "Eggs, bacon, sausage, hash browns, toast and coffee",
+    "price": 32,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 25
+  },
+  {
+    "Id": 3,
+    "category": "Lunch",
+    "name": "Caesar Salad",
+    "description": "Crisp romaine, parmesan cheese, croutons, caesar dressing",
+    "price": 18,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 15
+  },
+  {
+    "Id": 4,
+    "category": "Lunch",
+    "name": "Club Sandwich",
+    "description": "Triple-decker with turkey, bacon, lettuce, tomato, mayo",
+    "price": 22,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 18
+  },
+  {
+    "Id": 5,
+    "category": "Dinner",
+    "name": "Grilled Salmon",
+    "description": "Atlantic salmon with lemon butter, seasonal vegetables",
+    "price": 38,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 35
+  },
+  {
+    "Id": 6,
+    "category": "Dinner",
+    "name": "Filet Mignon",
+    "description": "8oz beef tenderloin with garlic mashed potatoes",
+    "price": 48,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 40
+  },
+  {
+    "Id": 7,
+    "category": "Beverages",
+    "name": "Fresh Orange Juice",
+    "description": "Freshly squeezed Valencia oranges",
+    "price": 8,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 5
+  },
+  {
+    "Id": 8,
+    "category": "Beverages",
+    "name": "House Wine Selection",
+    "description": "Red or white wine by the glass",
+    "price": 12,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 5
+  },
+  {
+    "Id": 9,
+    "category": "Desserts",
+    "name": "Chocolate Cake",
+    "description": "Rich chocolate layer cake with vanilla ice cream",
+    "price": 14,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 10
+  },
+  {
+    "Id": 10,
+    "category": "Desserts",
+    "name": "Seasonal Fruit Plate",
+    "description": "Fresh seasonal fruits with honey drizzle",
+    "price": 16,
+    "image": "/api/placeholder/300/200",
+    "available": true,
+    "preparationTime": 8
+  }
+]
