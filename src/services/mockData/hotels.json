@@ -1,15 +1,18 @@
 [
   {
     "Id": 1,
-    "name": "The Royal Meridian",
+    "name": "Grand Plaza Hotel",
+    "starRating": 5,
+    "rating": 4.7,
+    "reviewCount": 1248,
+    "pricePerNight": 350,
+    "distanceFromCenter": 0.5,
     "location": {
       "city": "New York",
       "state": "NY",
       "country": "USA",
-      "address": "123 Fifth Avenue",
-      "coordinates": { "lat": 40.7589, "lng": -73.9851 }
+      "address": "123 Broadway Avenue"
     },
-    "starRating": 5,
     "images": [
       "/api/placeholder/800/600",
       "/api/placeholder/800/600",
@@ -19,27 +22,28 @@
     "description": "Luxury hotel in the heart of Manhattan with world-class amenities and exceptional service.",
     "contactInfo": {
       "phone": "+1-555-0123",
-      "email": "reservations@royalmeridian.com"
+      "email": "reservations@grandplaza.com"
     },
     "policies": {
       "checkIn": "3:00 PM",
       "checkOut": "11:00 AM",
       "cancellation": "24 hours before arrival"
-    },
-    "rating": 4.8,
-    "reviewCount": 2847
+    }
   },
   {
     "Id": 2,
     "name": "Ocean Breeze Resort",
+    "starRating": 4,
+    "rating": 4.5,
+    "reviewCount": 856,
+    "pricePerNight": 280,
+    "distanceFromCenter": 3.2,
     "location": {
       "city": "Miami",
       "state": "FL",
       "country": "USA",
-      "address": "456 Ocean Drive",
-      "coordinates": { "lat": 25.7617, "lng": -80.1918 }
+      "address": "456 Ocean Drive"
     },
-    "starRating": 4,
     "images": [
       "/api/placeholder/800/600",
       "/api/placeholder/800/600",
@@ -55,27 +59,28 @@
       "checkIn": "4:00 PM",
       "checkOut": "12:00 PM",
       "cancellation": "48 hours before arrival"
-    },
-    "rating": 4.6,
-    "reviewCount": 1923
+    }
   },
   {
     "Id": 3,
     "name": "Mountain View Lodge",
+    "starRating": 4,
+    "rating": 4.3,
+    "reviewCount": 634,
+    "pricePerNight": 220,
+    "distanceFromCenter": 5.8,
     "location": {
-      "city": "Aspen",
+      "city": "Denver",
       "state": "CO",
       "country": "USA",
-      "address": "789 Alpine Way",
-      "coordinates": { "lat": 39.1911, "lng": -106.8175 }
+      "address": "789 Alpine Road"
     },
-    "starRating": 4,
     "images": [
       "/api/placeholder/800/600",
       "/api/placeholder/800/600",
       "/api/placeholder/800/600"
     ],
-    "amenities": ["WiFi", "Ski Access", "Fireplace", "Restaurant", "Bar", "Hot Tub"],
+    "amenities": ["WiFi", "Ski Access", "Fireplace", "Restaurant", "Hot Tub", "Mountain Views"],
     "description": "Cozy mountain lodge with breathtaking views and direct ski slope access.",
     "contactInfo": {
       "phone": "+1-555-0789",
@@ -85,98 +90,378 @@
       "checkIn": "3:00 PM",
       "checkOut": "11:00 AM",
       "cancellation": "72 hours before arrival"
-    },
-    "rating": 4.7,
-    "reviewCount": 856
+    }
   },
   {
     "Id": 4,
-    "name": "Urban Central Hotel",
-    "location": {
-      "city": "Los Angeles",
-      "state": "CA",
-      "country": "USA",
-      "address": "321 Downtown Blvd",
-      "coordinates": { "lat": 34.0522, "lng": -118.2437 }
-    },
+    "name": "Downtown Business Hotel",
     "starRating": 3,
+    "rating": 4.0,
+    "reviewCount": 423,
+    "pricePerNight": 180,
+    "distanceFromCenter": 1.2,
+    "location": {
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "address": "321 Michigan Avenue"
+    },
     "images": [
       "/api/placeholder/800/600",
       "/api/placeholder/800/600",
       "/api/placeholder/800/600"
     ],
-    "amenities": ["WiFi", "Gym", "Business Center", "Restaurant", "Parking"],
-    "description": "Modern business hotel in downtown LA with convenient access to attractions.",
+    "amenities": ["WiFi", "Business Center", "Gym", "Restaurant", "Meeting Rooms"],
+    "description": "Modern business hotel in downtown Chicago with excellent conference facilities.",
     "contactInfo": {
       "phone": "+1-555-0321",
-      "email": "reservations@urbancentralhotel.com"
+      "email": "reservations@downtownbusiness.com"
     },
     "policies": {
       "checkIn": "3:00 PM",
       "checkOut": "12:00 PM",
       "cancellation": "24 hours before arrival"
-    },
-    "rating": 4.2,
-    "reviewCount": 1456
+    }
   },
   {
     "Id": 5,
-    "name": "Historic Grand Plaza",
+    "name": "Luxury Suites Downtown",
+    "starRating": 5,
+    "rating": 4.8,
+    "reviewCount": 1567,
+    "pricePerNight": 420,
+    "distanceFromCenter": 0.8,
     "location": {
       "city": "San Francisco",
       "state": "CA",
       "country": "USA",
-      "address": "555 Union Square",
-      "coordinates": { "lat": 37.7749, "lng": -122.4194 }
+      "address": "555 Market Street"
     },
-    "starRating": 5,
     "images": [
       "/api/placeholder/800/600",
       "/api/placeholder/800/600",
       "/api/placeholder/800/600"
     ],
-    "amenities": ["WiFi", "Spa", "Fine Dining", "Concierge", "Valet", "Business Center"],
-    "description": "Historic luxury hotel with Victorian elegance and modern sophistication.",
+    "amenities": ["WiFi", "Spa", "Rooftop Bar", "Concierge", "Valet", "Fine Dining"],
+    "description": "Upscale luxury suites with panoramic city views and world-class amenities.",
     "contactInfo": {
       "phone": "+1-555-0555",
-      "email": "concierge@historicgrandplaza.com"
+      "email": "info@luxurysuites.com"
     },
     "policies": {
       "checkIn": "3:00 PM",
       "checkOut": "11:00 AM",
       "cancellation": "24 hours before arrival"
-    },
-    "rating": 4.9,
-    "reviewCount": 3241
+    }
   },
   {
     "Id": 6,
-    "name": "Desert Oasis Resort",
-    "location": {
-      "city": "Phoenix",
-      "state": "AZ",
-      "country": "USA",
-      "address": "777 Desert View Road",
-      "coordinates": { "lat": 33.4484, "lng": -112.0740 }
-    },
+    "name": "Historic Inn & Suites",
     "starRating": 4,
+    "rating": 4.4,
+    "reviewCount": 789,
+    "pricePerNight": 240,
+    "distanceFromCenter": 2.1,
+    "location": {
+      "city": "Boston",
+      "state": "MA",
+      "country": "USA",
+      "address": "777 Beacon Street"
+    },
     "images": [
       "/api/placeholder/800/600",
       "/api/placeholder/800/600",
       "/api/placeholder/800/600"
     ],
-    "amenities": ["WiFi", "Pool", "Spa", "Golf", "Tennis", "Restaurant", "Bar"],
-    "description": "Luxury desert resort with championship golf course and world-class spa.",
+    "amenities": ["WiFi", "Historic Architecture", "Restaurant", "Bar", "Gym"],
+    "description": "Charming historic inn blending classic elegance with modern comfort.",
     "contactInfo": {
       "phone": "+1-555-0777",
-      "email": "info@desertoasisresort.com"
+      "email": "reservations@historicinn.com"
     },
     "policies": {
       "checkIn": "4:00 PM",
       "checkOut": "12:00 PM",
       "cancellation": "48 hours before arrival"
+    }
+  },
+  {
+    "Id": 7,
+    "name": "Beachfront Paradise Resort",
+    "starRating": 5,
+    "rating": 4.6,
+    "reviewCount": 2103,
+    "pricePerNight": 380,
+    "distanceFromCenter": 4.5,
+    "location": {
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "address": "888 Pacific Coast Highway"
     },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Beach Access", "Pool", "Spa", "Water Sports", "Fine Dining"],
+    "description": "Stunning beachfront resort offering luxury accommodations and breathtaking ocean views.",
+    "contactInfo": {
+      "phone": "+1-555-0888",
+      "email": "info@beachfrontparadise.com"
+    },
+    "policies": {
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "72 hours before arrival"
+    }
+  },
+  {
+    "Id": 8,
+    "name": "Airport Express Hotel",
+    "starRating": 3,
+    "rating": 3.9,
+    "reviewCount": 512,
+    "pricePerNight": 150,
+    "distanceFromCenter": 8.5,
+    "location": {
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "USA",
+      "address": "999 Airport Boulevard"
+    },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Airport Shuttle", "Gym", "Business Center"],
+    "description": "Convenient airport hotel with 24/7 shuttle service and comfortable accommodations.",
+    "contactInfo": {
+      "phone": "+1-555-0999",
+      "email": "bookings@airportexpress.com"
+    },
+    "policies": {
+      "checkIn": "2:00 PM",
+      "checkOut": "12:00 PM",
+      "cancellation": "24 hours before arrival"
+    }
+  },
+  {
+    "Id": 9,
+    "name": "Garden View Boutique",
+    "starRating": 4,
     "rating": 4.5,
-    "reviewCount": 1678
+    "reviewCount": 945,
+    "pricePerNight": 260,
+    "distanceFromCenter": 1.8,
+    "location": {
+      "city": "Seattle",
+      "state": "WA",
+      "country": "USA",
+      "address": "111 Pine Street"
+    },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Garden Views", "Restaurant", "Bar", "Spa"],
+    "description": "Boutique hotel featuring beautiful garden views and personalized service.",
+    "contactInfo": {
+      "phone": "+1-555-0111",
+      "email": "info@gardenviewboutique.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "48 hours before arrival"
+    }
+  },
+  {
+    "Id": 10,
+    "name": "Riverside Hotel & Conference",
+    "starRating": 4,
+    "rating": 4.2,
+    "reviewCount": 678,
+    "pricePerNight": 210,
+    "distanceFromCenter": 2.5,
+    "location": {
+      "city": "Portland",
+      "state": "OR",
+      "country": "USA",
+      "address": "222 Waterfront Drive"
+    },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "River Views", "Conference Center", "Restaurant", "Gym"],
+    "description": "Riverside hotel with extensive conference facilities and scenic waterfront location.",
+    "contactInfo": {
+      "phone": "+1-555-0222",
+      "email": "reservations@riversidehotel.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "12:00 PM",
+      "cancellation": "48 hours before arrival"
+    }
+  },
+  {
+    "Id": 11,
+    "name": "City Center Plaza",
+    "starRating": 3,
+    "rating": 4.1,
+    "reviewCount": 534,
+    "pricePerNight": 190,
+    "distanceFromCenter": 1.0,
+    "location": {
+      "city": "Austin",
+      "state": "TX",
+      "country": "USA",
+      "address": "333 Congress Avenue"
+    },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Restaurant", "Bar", "Gym", "Business Center"],
+    "description": "Centrally located hotel perfect for business travelers and tourists alike.",
+    "contactInfo": {
+      "phone": "+1-555-0333",
+      "email": "info@citycenterplaza.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "12:00 PM",
+      "cancellation": "24 hours before arrival"
+    }
+  },
+  {
+    "Id": 12,
+    "name": "Lakeside Resort",
+    "starRating": 5,
+    "rating": 4.7,
+    "reviewCount": 1823,
+    "pricePerNight": 320,
+    "distanceFromCenter": 3.8,
+    "location": {
+      "city": "Minneapolis",
+      "state": "MN",
+      "country": "USA",
+      "address": "444 Lake Street"
+    },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Lake Views", "Pool", "Spa", "Restaurant", "Water Activities"],
+    "description": "Luxury lakeside resort offering tranquil surroundings and premium amenities.",
+    "contactInfo": {
+      "phone": "+1-555-0444",
+      "email": "reservations@lakesideresort.com"
+    },
+    "policies": {
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "72 hours before arrival"
+    }
+  },
+  {
+    "Id": 13,
+    "name": "Metro Suites",
+    "starRating": 3,
+    "rating": 3.8,
+    "reviewCount": 412,
+    "pricePerNight": 160,
+    "distanceFromCenter": 2.3,
+    "location": {
+      "city": "Phoenix",
+      "state": "AZ",
+      "country": "USA",
+      "address": "555 Central Avenue"
+    },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Pool", "Kitchenette", "Gym"],
+    "description": "Affordable suites with kitchenettes, ideal for extended stays.",
+    "contactInfo": {
+      "phone": "+1-555-0555",
+      "email": "info@metrosuites.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "12:00 PM",
+      "cancellation": "24 hours before arrival"
+    }
+  },
+  {
+    "Id": 14,
+    "name": "Harbor View Inn",
+    "starRating": 4,
+    "rating": 4.4,
+    "reviewCount": 867,
+    "pricePerNight": 270,
+    "distanceFromCenter": 1.5,
+    "location": {
+      "city": "San Diego",
+      "state": "CA",
+      "country": "USA",
+      "address": "666 Harbor Drive"
+    },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Harbor Views", "Restaurant", "Bar", "Spa", "Waterfront Dining"],
+    "description": "Charming harborfront inn with spectacular views and excellent dining options.",
+    "contactInfo": {
+      "phone": "+1-555-0666",
+      "email": "reservations@harborviewinn.com"
+    },
+    "policies": {
+      "checkIn": "3:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "48 hours before arrival"
+    }
+  },
+  {
+    "Id": 15,
+    "name": "Skyline Towers Hotel",
+    "starRating": 5,
+    "rating": 4.9,
+    "reviewCount": 2456,
+    "pricePerNight": 450,
+    "distanceFromCenter": 0.3,
+    "location": {
+      "city": "Las Vegas",
+      "state": "NV",
+      "country": "USA",
+      "address": "777 Las Vegas Boulevard"
+    },
+    "images": [
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600",
+      "/api/placeholder/800/600"
+    ],
+    "amenities": ["WiFi", "Casino", "Pool", "Spa", "Fine Dining", "Entertainment", "Nightclub"],
+    "description": "Iconic Las Vegas hotel with world-class entertainment, dining, and gaming facilities.",
+    "contactInfo": {
+      "phone": "+1-555-0777",
+      "email": "reservations@skylinetowers.com"
+    },
+    "policies": {
+      "checkIn": "4:00 PM",
+      "checkOut": "11:00 AM",
+      "cancellation": "72 hours before arrival"
+    }
   }
 ]

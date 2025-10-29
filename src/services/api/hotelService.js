@@ -18,7 +18,7 @@ export const hotelService = {
     return { ...hotel }
   },
 
-  async searchHotels(criteria) {
+async searchHotels(criteria) {
     await delay(400)
     let results = [...hotelsData]
 
@@ -30,6 +30,13 @@ export const hotelService = {
 
     if (criteria.minRating) {
       results = results.filter(hotel => hotel.rating >= criteria.minRating)
+    }
+
+    if (criteria.priceRange && criteria.priceRange.length === 2) {
+      results = results.filter(hotel => 
+        hotel.pricePerNight >= criteria.priceRange[0] && 
+        hotel.pricePerNight <= criteria.priceRange[1]
+      )
     }
 
     if (criteria.starRating && criteria.starRating.length > 0) {
