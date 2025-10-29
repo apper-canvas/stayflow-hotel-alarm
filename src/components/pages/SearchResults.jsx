@@ -38,14 +38,18 @@ const SearchResults = () => {
     children: parseInt(searchParams.get("children")) || 0
   }
 
-  useEffect(() => {
-    if (searchCriteria.destination) {
+useEffect(() => {
+    // Validate search criteria before executing search
+    if (searchCriteria.destination && searchCriteria.destination.trim().length > 0) {
+      searchHotels()
+    } else if (searchParams.get('destination')) {
+      // If URL has destination but criteria doesn't, trigger search
       searchHotels()
     }
   }, [searchParams])
 
   useEffect(() => {
-    applySorting()
+applySorting()
   }, [sortBy, hotels])
 
   useEffect(() => {
@@ -91,8 +95,10 @@ const SearchResults = () => {
         amenities: []
       })
       
+// Set results even if empty - let Empty component handle display
       setHotels(results)
       setFilteredHotels(results)
+      setLoading(false)
     } catch (err) {
       setError(err.message)
       toast.error("Failed to search hotels")
