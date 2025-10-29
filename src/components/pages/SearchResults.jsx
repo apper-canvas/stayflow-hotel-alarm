@@ -18,7 +18,12 @@ const SearchResults = () => {
   const [filteredHotels, setFilteredHotels] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState("")
-  const [sortBy, setSortBy] = useState("recommended")
+const [sortBy, setSortBy] = useState("recommended")
+  
+  const resetFilters = () => {
+    setSortBy("recommended")
+    setFilteredHotels(hotels)
+  }
   const [viewMode, setViewMode] = useState("grid")
   const [showFilters, setShowFilters] = useState(false)
   const [showMap, setShowMap] = useState(false)
@@ -360,13 +365,13 @@ if (loading) {
               {/* Results */}
               {showMap ? (
                 <MapView />
-              ) : filteredHotels.length === 0 ? (
+) : filteredHotels.length === 0 ? (
                 <Empty
                   title="No hotels found"
-                  description="Try adjusting your search criteria or filters to find more options"
+                  description={`We couldn't find any hotels matching your criteria${searchCriteria?.destination ? ` in ${searchCriteria.destination}` : ''}. Try clearing filters or adjusting your search parameters.`}
                   icon="SearchX"
-                  actionLabel="Clear Filters"
-                  onAction={() => window.location.reload()}
+                  actionLabel="Clear All Filters"
+                  onAction={resetFilters}
                 />
               ) : (
                 <>
