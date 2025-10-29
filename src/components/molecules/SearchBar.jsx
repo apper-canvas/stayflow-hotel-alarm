@@ -52,9 +52,9 @@ const handleSearch = () => {
     setDestination(value)
     if (value.length >= 2) {
       const hotels = await hotelService.getAll()
-      const cities = [...new Set(hotels.map(h => h.location))]
+const cities = [...new Set(hotels.map(h => h.location?.city).filter(Boolean))]
       const suggestions = [
-        ...cities.filter(city => city.toLowerCase().includes(value.toLowerCase())).map(city => ({ type: 'city', name: city })),
+        ...cities.filter(city => city?.toLowerCase().includes(value.toLowerCase())).map(city => ({ type: 'city', name: city })),
         ...hotels.filter(hotel => hotel.name.toLowerCase().includes(value.toLowerCase())).map(hotel => ({ type: 'hotel', name: hotel.name, location: hotel.location }))
       ].slice(0, 8)
       setDestinationSuggestions(suggestions)
