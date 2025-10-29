@@ -63,9 +63,15 @@ const cities = [...new Set(hotels.map(h => h.location?.city).filter(Boolean))]
       setShowDestinationDropdown(false)
     }
   }
-
-  const selectDestination = (suggestion) => {
-    setDestination(suggestion.type === 'city' ? suggestion.name : `${suggestion.name}, ${suggestion.location}`)
+const selectDestination = (suggestion) => {
+    if (suggestion.type === 'city') {
+      setDestination(suggestion.name)
+    } else {
+      const locationStr = suggestion.location 
+        ? `${suggestion.location.city || ''}${suggestion.location.state ? ', ' + suggestion.location.state : ''}`
+        : ''
+      setDestination(`${suggestion.name}${locationStr ? ', ' + locationStr : ''}`)
+    }
     setShowDestinationDropdown(false)
   }
 
@@ -133,10 +139,18 @@ const totalGuests = guests.adults + guests.children
                     onClick={() => selectDestination(suggestion)}
                     className="w-full px-4 py-3 text-left hover:bg-gray-50 border-b border-gray-100 last:border-0 flex items-start gap-3"
                   >
-                    <ApperIcon name={suggestion.type === 'city' ? 'MapPin' : 'Building2'} size={18} className="text-gray-400 mt-0.5" />
+<ApperIcon name={suggestion.type === 'city' ? 'MapPin' : 'Building2'} size={18} className="text-gray-400 mt-0.5" />
                     <div>
                       <div className="font-medium text-secondary">{suggestion.name}</div>
-                      {suggestion.location && <div className="text-xs text-gray-500">{suggestion.location}</div>}
+                      {suggestion.location && (
+                        <div className="text-xs text-gray-500">
+                          {[
+                            suggestion.location.city,
+                            suggestion.location.state,
+                            suggestion.location.country
+                          ].filter(Boolean).join(', ')}
+                        </div>
+                      )}
                       <div className="text-xs text-primary mt-1">{suggestion.type === 'city' ? 'City' : 'Hotel'}</div>
                     </div>
                   </button>
