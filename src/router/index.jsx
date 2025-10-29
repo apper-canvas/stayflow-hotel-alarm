@@ -41,8 +41,12 @@ const mainRoutes = [
     element: withSuspense(Home)
   },
   {
-    path: "search-results",
+path: "search-results",
     element: withSuspense(SearchResults)
+  },
+  {
+    path: "hotels",
+    element: withSuspense(lazy(() => import("@/components/pages/AllHotels")))
   },
   {
     path: "hotel/:id",
