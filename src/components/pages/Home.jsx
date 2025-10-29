@@ -13,9 +13,10 @@ import { hotelService } from "@/services/api/hotelService"
 
 const Home = () => {
   const navigate = useNavigate()
-  const [featuredHotels, setFeaturedHotels] = useState([])
+const [featuredHotels, setFeaturedHotels] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState("")
+  const [showFilters, setShowFilters] = useState(false)
 
   useEffect(() => {
     loadFeaturedHotels()
@@ -39,14 +40,14 @@ const Home = () => {
     }
   }
 
-  const handleSearch = (searchCriteria) => {
-    // Navigate to search results with criteria
+const handleSearch = (searchCriteria) => {
     const searchParams = new URLSearchParams({
       destination: searchCriteria.destination,
       checkIn: searchCriteria.checkIn,
       checkOut: searchCriteria.checkOut,
       adults: searchCriteria.guests.adults.toString(),
-      children: searchCriteria.guests.children.toString()
+      children: searchCriteria.guests.children.toString(),
+      rooms: searchCriteria.guests.rooms.toString()
     })
     navigate(`/search?${searchParams.toString()}`)
   }
@@ -82,7 +83,7 @@ const Home = () => {
   if (error) return <Error message={error} onRetry={loadFeaturedHotels} />
 
   return (
-    <div className="min-h-screen">
+<div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-secondary via-secondary/90 to-primary/20 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -91,7 +92,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Discover Your Perfect
-              <span className="block gradient-text text-white bg-clip-text bg-gradient-to-r from-accent to-primary">
+              <span className="block text-white">
                 Hotel Experience
               </span>
             </h1>
@@ -104,9 +105,9 @@ const Home = () => {
       </section>
 
       {/* Search Section */}
-      <section className="relative -mt-12 z-10">
+<section className="relative -mt-12 z-10">
         <div className="container mx-auto px-4">
-          <SearchBar onSearch={handleSearch} className="max-w-6xl mx-auto" />
+          <SearchBar onSearch={handleSearch} onToggleFilters={() => setShowFilters(!showFilters)} className="max-w-6xl mx-auto" />
         </div>
       </section>
 
@@ -127,12 +128,12 @@ const Home = () => {
               <Card
                 key={index}
                 hoverable
-                className="p-0 overflow-hidden cursor-pointer"
+className="p-0 overflow-hidden cursor-pointer"
                 onClick={() => handleSearch({ 
                   destination: destination.name, 
                   checkIn: "", 
                   checkOut: "", 
-                  guests: { adults: 2, children: 0 } 
+                  guests: { adults: 2, children: 0, rooms: 1 } 
                 })}
               >
                 <div className="relative h-48">
