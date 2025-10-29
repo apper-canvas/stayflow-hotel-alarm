@@ -128,9 +128,15 @@ const handleOpenLightbox = (index) => {
     }
   }
 
+const getCategorizedAmenitiesCount = () => {
+    if (!hotel.categorizedAmenities) return hotel.amenities?.length || 0
+    const categories = hotel.categorizedAmenities
+    return Object.values(categories).reduce((total, items) => total + (items?.length || 0), 0)
+  }
+
   const tabs = [
     { id: "rooms", label: "Rooms", count: rooms.length },
-    { id: "amenities", label: "Amenities", count: hotel.amenities?.length || 0 },
+    { id: "amenities", label: "Amenities", count: getCategorizedAmenitiesCount() },
     { id: "reviews", label: "Reviews", count: reviews.length },
     { id: "location", label: "Location" }
   ]
@@ -404,7 +410,7 @@ const handleOpenLightbox = (index) => {
                 </div>
 
                 {/* Tab Content */}
-                <div className="mb-8">
+<div className="mb-8">
                   {activeTab === "rooms" && (
                     <div className="space-y-6">
                       {rooms.length === 0 ? (
@@ -414,27 +420,127 @@ const handleOpenLightbox = (index) => {
                           icon="Bed"
                         />
                       ) : (
-                        rooms.map((room) => (
-                          <RoomCard
-                            key={room.Id}
-                            room={room}
-                            onSelect={handleRoomSelect}
-                          />
-                        ))
+                        <>
+                          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                            <div className="flex items-start gap-3">
+                              <ApperIcon name="Info" size={20} className="text-blue-600 mt-0.5" />
+                              <div>
+                                <h4 className="font-semibold text-blue-900 mb-1">Room Availability</h4>
+                                <p className="text-sm text-blue-700">
+                                  Showing {rooms.length} room {rooms.length === 1 ? 'type' : 'types'} available for your selected dates. 
+                                  Prices include all taxes and fees.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          {rooms.map((room) => (
+                            <RoomCard
+                              key={room.Id}
+                              room={room}
+                              onSelect={handleRoomSelect}
+                            />
+                          ))}
+                        </>
                       )}
                     </div>
                   )}
 
-                  {activeTab === "amenities" && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {hotel.amenities?.map((amenity, index) => (
-                        <div key={index} className="flex items-center gap-3 p-4 bg-surface rounded-lg">
-                          <div className="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
-                            <ApperIcon name="Check" className="text-white" size={18} />
-                          </div>
-                          <span className="font-medium text-secondary">{amenity}</span>
+{activeTab === "amenities" && (
+                    <div className="space-y-8">
+                      {hotel.categorizedAmenities ? (
+                        <>
+                          {/* Room Amenities */}
+                          {hotel.categorizedAmenities.roomAmenities?.length > 0 && (
+                            <div>
+                              <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                                  <ApperIcon name="Bed" className="text-white" size={22} />
+                                </div>
+                                <h3 className="font-display text-xl font-semibold text-secondary">Room Amenities</h3>
+                              </div>
+                              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {hotel.categorizedAmenities.roomAmenities.map((amenity, index) => (
+                                  <div key={index} className="flex items-center gap-3 p-4 bg-surface rounded-lg border border-gray-100 hover:border-primary transition-colors">
+                                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                                    <span className="font-medium text-secondary">{amenity}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Bathroom Amenities */}
+                          {hotel.categorizedAmenities.bathroomAmenities?.length > 0 && (
+                            <div>
+                              <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                                  <ApperIcon name="Bath" className="text-white" size={22} />
+                                </div>
+                                <h3 className="font-display text-xl font-semibold text-secondary">Bathroom Amenities</h3>
+                              </div>
+                              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {hotel.categorizedAmenities.bathroomAmenities.map((amenity, index) => (
+                                  <div key={index} className="flex items-center gap-3 p-4 bg-surface rounded-lg border border-gray-100 hover:border-primary transition-colors">
+                                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                                    <span className="font-medium text-secondary">{amenity}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Hotel Facilities */}
+                          {hotel.categorizedAmenities.hotelFacilities?.length > 0 && (
+                            <div>
+                              <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                                  <ApperIcon name="Building2" className="text-white" size={22} />
+                                </div>
+                                <h3 className="font-display text-xl font-semibold text-secondary">Hotel Facilities</h3>
+                              </div>
+                              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {hotel.categorizedAmenities.hotelFacilities.map((amenity, index) => (
+                                  <div key={index} className="flex items-center gap-3 p-4 bg-surface rounded-lg border border-gray-100 hover:border-primary transition-colors">
+                                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                                    <span className="font-medium text-secondary">{amenity}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Services */}
+                          {hotel.categorizedAmenities.services?.length > 0 && (
+                            <div>
+                              <div className="flex items-center gap-3 mb-4">
+                                <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                                  <ApperIcon name="Concierge" className="text-white" size={22} />
+                                </div>
+                                <h3 className="font-display text-xl font-semibold text-secondary">Services</h3>
+                              </div>
+                              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {hotel.categorizedAmenities.services.map((amenity, index) => (
+                                  <div key={index} className="flex items-center gap-3 p-4 bg-surface rounded-lg border border-gray-100 hover:border-primary transition-colors">
+                                    <div className="w-2 h-2 rounded-full bg-primary"></div>
+                                    <span className="font-medium text-secondary">{amenity}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        </>
+                      ) : (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                          {hotel.amenities?.map((amenity, index) => (
+                            <div key={index} className="flex items-center gap-3 p-4 bg-surface rounded-lg border border-gray-100">
+                              <div className="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+                                <ApperIcon name="Check" className="text-white" size={18} />
+                              </div>
+                              <span className="font-medium text-secondary">{amenity}</span>
+                            </div>
+                          ))}
                         </div>
-                      ))}
+                      )}
                     </div>
                   )}
 

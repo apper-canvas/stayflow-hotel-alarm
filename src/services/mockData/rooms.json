@@ -12,9 +12,12 @@
       "/api/placeholder/800/600"
     ],
     "basePrice": 450,
+    "taxRate": 0.12,
+    "serviceFee": 25,
+    "availableRooms": 3,
     "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
   },
-  {
+{
     "Id": 2,
     "hotelId": 1,
     "roomType": "Executive Double",
@@ -27,9 +30,12 @@
       "/api/placeholder/800/600"
     ],
     "basePrice": 320,
+    "taxRate": 0.12,
+    "serviceFee": 25,
+    "availableRooms": 5,
     "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
   },
-  {
+{
     "Id": 3,
     "hotelId": 2,
     "roomType": "Ocean View Suite",
@@ -42,9 +48,12 @@
       "/api/placeholder/800/600"
     ],
     "basePrice": 380,
+    "taxRate": 0.12,
+    "serviceFee": 25,
+    "availableRooms": 2,
     "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
   },
-  {
+{
     "Id": 4,
     "hotelId": 2,
     "roomType": "Standard Beach Room",
@@ -57,9 +66,12 @@
       "/api/placeholder/800/600"
     ],
     "basePrice": 220,
+    "taxRate": 0.12,
+    "serviceFee": 25,
+    "availableRooms": 8,
     "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
   },
-  {
+{
     "Id": 5,
     "hotelId": 3,
     "roomType": "Mountain View Lodge Room",
@@ -72,9 +84,12 @@
       "/api/placeholder/800/600"
     ],
     "basePrice": 280,
+    "taxRate": 0.12,
+    "serviceFee": 25,
+    "availableRooms": 4,
     "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
   },
-  {
+{
     "Id": 6,
     "hotelId": 4,
     "roomType": "Business King Room",
@@ -87,9 +102,12 @@
       "/api/placeholder/800/600"
     ],
     "basePrice": 180,
+    "taxRate": 0.12,
+    "serviceFee": 25,
+    "availableRooms": 6,
     "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
   },
-  {
+{
     "Id": 7,
     "hotelId": 5,
     "roomType": "Victorian Suite",
@@ -102,9 +120,12 @@
       "/api/placeholder/800/600"
     ],
     "basePrice": 650,
+    "taxRate": 0.12,
+    "serviceFee": 25,
+    "availableRooms": 1,
     "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
   },
-  {
+{
     "Id": 8,
     "hotelId": 6,
     "roomType": "Desert Villa",
@@ -117,6 +138,9 @@
       "/api/placeholder/800/600"
     ],
     "basePrice": 350,
+    "taxRate": 0.12,
+    "serviceFee": 25,
+    "availableRooms": 3,
     "availability": ["2024-01-15", "2024-01-16", "2024-01-17"]
   }
 ]
